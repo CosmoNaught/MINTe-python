@@ -327,10 +327,6 @@ If you use MINTe in your research, please cite:
   title = {MINTe: Malaria Intervention Emulator},
   author = {Cosmo Santoni},
   year = {2025},
-  url = {https://github.com/CosmoNaught/minte}
+  url = {https://github.com/CosmoNaught/MINTe-python}
 }
 ```
-
-## Contributing
-
-Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
