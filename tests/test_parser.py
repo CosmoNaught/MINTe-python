@@ -2,7 +2,7 @@
 
 import pytest
 import numpy as np
-from minter.parser import (
+from minte.parser import (
     calculate_overall_dn0,
     CANONICAL_NET_TYPES,
     DN0Result,

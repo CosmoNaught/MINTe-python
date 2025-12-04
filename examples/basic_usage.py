@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 
 # Import MINTer components
-from minter import (
+from minte import (
     run_minter_scenarios,
     run_malaria_emulator,
     create_scenarios,
@@ -225,7 +225,7 @@ def main():
     except FileNotFoundError:
         print("\n[WARNING] Model files not found.")
         print("To run these examples, you need to:")
-        print("1. Place model files in src/minter/models/")
+        print("1. Place model files in src/minte/models/")
         print("2. Or set MINTER_MODELS_DIR environment variable")
         print("\nSkipping examples that require models.")
         return

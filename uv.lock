@@ -851,7 +851,7 @@ wheels = [
 ]
 
 [[package]]
-name = "minter"
+name = "minte"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [

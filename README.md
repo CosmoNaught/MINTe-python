@@ -1,4 +1,4 @@
-# MINTer - Malaria Intervention Emulator
+# MINTe - Malaria Intervention Emulator
 
 A Python package for neural network-based malaria scenario predictions, enabling rapid evaluation of intervention strategies including ITNs (Insecticide-Treated Nets), IRS (Indoor Residual Spraying), and LSM (Larval Source Management).
 
@@ -36,10 +36,10 @@ cd my-malaria-project
 uv init
 
 # Add MINTer as a dependency (from local path)
-uv add /path/to/minter
+uv add /path/to/minte
 
 # Or if published to PyPI (future):
-# uv add minter
+# uv add minte
 ```
 
 ### Development Installation
@@ -48,8 +48,8 @@ For development, clone the repository and install in editable mode:
 
 ```bash
 # Clone the repository
-git clone https://github.com/CosmoNaught/minter.git
-cd minter
+git clone https://github.com/CosmoNaught/minte.git
+cd minte
 
 # Create virtual environment and install with uv
 uv venv
@@ -60,7 +60,7 @@ uv pip install -e ".[dev]"
 ### Using pip
 
 ```bash
-pip install minter
+pip install minte
 
 # Or for development:
 pip install -e ".[dev]"
@@ -72,7 +72,7 @@ pip install -e ".[dev]"
 
 ```python
 import numpy as np
-from minter import run_minter_scenarios
+from minte import run_minter_scenarios
 
 # Define a single scenario
 results = run_minter_scenarios(
@@ -101,7 +101,7 @@ print(results.cases.head())
 
 ```python
 import numpy as np
-from minter import run_minter_scenarios
+from minte import run_minter_scenarios
 
 # Define multiple scenarios
 n_scenarios = 100
@@ -128,7 +128,7 @@ results = run_minter_scenarios(
 
 ```python
 import pandas as pd
-from minter import run_malaria_emulator, create_scenarios
+from minte import run_malaria_emulator, create_scenarios
 
 # Create scenarios DataFrame
 scenarios = create_scenarios(
@@ -157,7 +157,7 @@ results = run_malaria_emulator(
 ### Visualization
 
 ```python
-from minter import create_scenario_plots
+from minte import create_scenario_plots
 
 # Create plots from results
 plots = create_scenario_plots(
@@ -172,7 +172,7 @@ plots = create_scenario_plots(
 For web applications, use the simplified controller:
 
 ```python
-from minter import run_mintweb_controller
+from minte import run_mintweb_controller
 
 results = run_mintweb_controller(
     res_use=[0.3],
@@ -195,7 +195,7 @@ results = run_mintweb_controller(
 
 ## Model Files
 
-The package requires trained model files to run predictions. These should be placed in the `src/minter/models/` directory (or specify a custom path) with the following structure:
+The package requires trained model files to run predictions. These should be placed in the `src/minte/models/` directory (or specify a custom path) with the following structure:
 
 ```
 models/
@@ -222,20 +222,20 @@ If you have the original R package files, you'll need to:
 **Method 1: Using the included script (requires rpy2)**
 ```bash
 pip install rpy2
-python scripts/convert_rds.py path/to/itn_dn0.rds src/minter/data/itn_dn0.csv
+python scripts/convert_rds.py path/to/itn_dn0.rds src/minte/data/itn_dn0.csv
 ```
 
 **Method 2: Using R directly**
 ```r
 # In R console:
 data <- readRDS("path/to/itn_dn0.rds")
-write.csv(data, "src/minter/data/itn_dn0.csv", row.names = FALSE)
+write.csv(data, "src/minte/data/itn_dn0.csv", row.names = FALSE)
 ```
 
 ### Expected Data File Locations
 
 ```
-src/minter/
+src/minte/
 ├── data/
 │   └── itn_dn0.csv           # ITN parameters (resistance vs dn0)
 └── models/
@@ -252,7 +252,7 @@ src/minter/
 Models are cached by default for faster subsequent runs:
 
 ```python
-from minter import preload_all_models, clear_cache, get_cache_info
+from minte import preload_all_models, clear_cache, get_cache_info
 
 # Preload all models
 preload_all_models(verbose=True)
@@ -269,7 +269,7 @@ clear_cache()
 By default, the package uses CUDA if available:
 
 ```python
-from minter import load_emulator_models
+from minte import load_emulator_models
 
 # Force CPU
 models = load_emulator_models(device="cpu")
@@ -323,11 +323,11 @@ MIT License - see LICENSE file for details.
 If you use MINTer in your research, please cite:
 
 ```bibtex
-@software{minter,
+@software{minte,
   title = {MINTer: Malaria Intervention Emulator},
   author = {Cosmo Santoni},
   year = {2025},
-  url = {https://github.com/CosmoNaught/minter}
+  url = {https://github.com/CosmoNaught/minte}
 }
 ```
 

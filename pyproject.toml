@@ -1,7 +1,7 @@
 [project]
-name = "minter"
+name = "minte"
 version = "1.0.0"
-description = "Malaria Intervention Emulator (MINTer) - Neural network-based malaria scenario predictions"
+description = "Malaria Intervention Emulator (MINTe) - Neural network-based malaria scenario predictions"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -44,29 +44,29 @@ xgboost = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/CosmoNaught/minter"
-Documentation = "https://github.com/CosmoNaught/minter#readme"
-Repository = "https://github.com/CosmoNaught/minter"
-Issues = "https://github.com/CosmoNaught/minter/issues"
+Homepage = "https://github.com/CosmoNaught/minte"
+Documentation = "https://github.com/CosmoNaught/minte#readme"
+Repository = "https://github.com/CosmoNaught/minte"
+Issues = "https://github.com/CosmoNaught/minte/issues"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/minter"]
+packages = ["src/minte"]
 
 [tool.hatch.build.targets.wheel.sources]
 "src" = ""
 
 [tool.hatch.build]
 include = [
-    "src/minter/**/*.py",
-    "src/minter/**/*.csv",
-    "src/minter/**/*.json",
-    "src/minter/**/*.pkl",
-    "src/minter/**/*.pt",
-    "src/minter/py.typed",
+    "src/minte/**/*.py",
+    "src/minte/**/*.csv",
+    "src/minte/**/*.json",
+    "src/minte/**/*.pkl",
+    "src/minte/**/*.pt",
+    "src/minte/py.typed",
 ]
 
 [tool.ruff]

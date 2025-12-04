@@ -1,1 +1,1 @@
-"""Tests for the minter package."""
+"""Tests for the minte package."""
