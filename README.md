@@ -38,8 +38,8 @@ uv init
 # Add MINTe as a dependency (from local path)
 uv add /path/to/minte
 
-# Or if published to PyPI (future):
-# uv add minte
+# Or from PyPI:
+uv add minte
 ```
 
 ### Development Installation
