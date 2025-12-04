@@ -1,5 +1,5 @@
 """
-Model caching utilities for MINTer.
+Model caching utilities for MINTe.
 
 Provides in-memory caching of loaded models to improve performance
 across multiple scenario runs.

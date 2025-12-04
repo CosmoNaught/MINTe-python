@@ -25,7 +25,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Then create a new project and install MINTer:
+Then create a new project and install MINTe:
 
 ```bash
 # Create a new project directory
@@ -35,7 +35,7 @@ cd my-malaria-project
 # Initialize a new Python project with uv
 uv init
 
-# Add MINTer as a dependency (from local path)
+# Add MINTe as a dependency (from local path)
 uv add /path/to/minte
 
 # Or if published to PyPI (future):
@@ -320,11 +320,11 @@ MIT License - see LICENSE file for details.
 
 ## Citation
 
-If you use MINTer in your research, please cite:
+If you use MINTe in your research, please cite:
 
 ```bibtex
 @software{minte,
-  title = {MINTer: Malaria Intervention Emulator},
+  title = {MINTe: Malaria Intervention Emulator},
   author = {Cosmo Santoni},
   year = {2025},
   url = {https://github.com/CosmoNaught/minte}

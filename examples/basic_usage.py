@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """
-Example: Running malaria intervention scenarios with MINTer.
+Example: Running malaria intervention scenarios with MINTe.
 
-This script demonstrates how to use the MINTer package to:
+This script demonstrates how to use the MINTe package to:
 1. Run basic intervention scenarios
 2. Compare different net types
 3. Visualize results
@@ -11,7 +11,7 @@ This script demonstrates how to use the MINTer package to:
 import numpy as np
 import pandas as pd
 
-# Import MINTer components
+# Import MINTe components
 from minte import (
     run_minter_scenarios,
     run_malaria_emulator,
@@ -212,7 +212,7 @@ def example_batch_scenarios():
 def main():
     """Run all examples."""
     print("\n" + "#" * 60)
-    print("# MINTer Package Examples")
+    print("# MINTe Package Examples")
     print("#" * 60)
 
     # Note: These examples require model files to be present

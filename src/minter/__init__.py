@@ -1,5 +1,5 @@
 """
-MINTer - Malaria Intervention Emulator
+MINTe - Malaria Intervention Emulator
 
 A neural network-based malaria scenario prediction package for evaluating
 intervention strategies including ITNs, IRS, and LSM.
